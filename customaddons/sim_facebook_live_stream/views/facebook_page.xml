@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record id="facebook_page_view_tree" model="ir.ui.view">
+            <field name="name">facebook_page_view_tree</field>
+            <field name="model">facebook.page</field>
+            <field name="arch" type="xml">
+                <tree string="facebook_page_tree">
+                    <field name="page_name"/>
+                    <field name="page_url" widget="url"/>
+                    <field name="page_status" widget="badge"
+                           decoration-muted="page_status == 'none'"
+                           decoration-success="page_status == 'live_now'"
+                           decoration-info="page_status == 'shutdown'" optional="show"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="facebook_page_view_form" model="ir.ui.view">
+            <field name="name">facebook_page_form</field>
+            <field name="model">facebook.page</field>
+            <field name="arch" type="xml">
+                <form string="facebook_page_form">
+                    <header>
+                        <button name="fetch_live_videos" type="object" class="oe_highlight" string="Fetch Live Videos"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button type="object" class="oe_stat_button" name="action_show_live_video"
+                                    icon="fa-video-camera">
+                                <field name="live_video_count" string="Live videos" widget="statinfo"/>
+                            </button>
+                        </div>
+
+                        <group>
+                            <group>
+                                <field name="page_name" required="1"/>
+                                <field name="page_id" required="1"/>
+
+                            </group>
+                            <group>
+                                <field name="page_category"/>
+                                <field name="page_status" widget="badge" decoration-muted="page_status == 'none'"
+                                       decoration-success="page_status == 'live_now'"
+                                       decoration-info="page_status == 'shutdown'" optional="show"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="page_url" widget="url"/>
+                        </group>
+
+                        <group>
+                            <field name="page_access_token"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="facebook_page_list_view">
+            <field name="name">Facebook Pages</field>
+            <field name="res_model">facebook.page</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- actions opening wizard views on models -->
+        <record id="call_fetch_info_pages_view_action" model="ir.actions.act_window">
+            <field name="name">Get Page Infomations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fetch.info.pages</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="sim_facebook_live_stream.fetch_info_pages_view_form"/>
+        </record>
+
+
+        <!-- Root menu item -->
+        <menuitem name="Facebook Live Stream"
+                  id="facebook_live_stream_menu_root"
+                  action="facebook_page_list_view"
+                  web_icon="sim_facebook_live_stream,static/description/icon.png"
+        />
+
+
+        <menuitem name="Get Pages" id="get_page_menu"
+                  sequence="1"
+                  parent="facebook_live_stream_menu_root"
+                  action="call_fetch_info_pages_view_action"/>
+
+
+        <!-- facebook page -->
+        <menuitem name="Facebook Pages" id="facebook_page_menu"
+                  sequence="4"
+                  parent="facebook_live_stream_menu_root"/>
+
+        <!--Page-->
+        <menuitem name="Pages" id="page_menu"
+                  sequence="1"
+                  parent="facebook_page_menu"
+                  action="facebook_page_list_view"/>
+
+
+    </data>
+</odoo>

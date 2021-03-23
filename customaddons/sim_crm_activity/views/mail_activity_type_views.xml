@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="activity_type_crm_lead_inherit_form_view" model="ir.ui.view">
+            <field name="name">activity_type_crm_lead_inherit_form_view</field>
+            <field name="model">mail.activity.type</field>
+            <field name="inherit_id" ref="mail.mail_activity_type_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr='//group[1]' position="after">
+                    <group>
+                        <field name="activity_type_crm_lead_bool" invisible="1"/>
+                        <field name="activity_type_result_ids"
+                               attrs="{'invisible': [('activity_type_crm_lead_bool', '=', False)]}">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="crm_stage_id"/>
+                                <field name="next_activity_type_id"/>
+                                <field name="next_activity_deadline"/>
+                            </tree>
+                        </field>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

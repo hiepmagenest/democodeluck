@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="live_videos_view_tree" model="ir.ui.view">
+            <field name="name">live_videos_view_tree</field>
+            <field name="model">live.videos</field>
+            <field name="arch" type="xml">
+                <tree string="live_videos_tree">
+                    <field name="video_title"/>
+                    <field name="page_id"/>
+                    <field name="video_status" widget="badge"
+                           decoration-muted="video_status == 'none'"
+                           decoration-success="video_status == 'LIVE'"
+                           decoration-info="video_status == 'VOD'"
+                           decoration-warning="video_status =='other'"
+                           optional="show"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="live_videos_view_form" model="ir.ui.view">
+            <field name="name">live_videos_view_form</field>
+            <field name="model">live.videos</field>
+            <field name="arch" type="xml">
+                <form string="live_videos_form">
+                    <header>
+                        <button name="fetch_comments_in_live_video" class="oe_highlight" type="object"
+                                string="Fetch Comments"/>
+                        <button name="create_lead" class="oe_highlight" type="object" string="Create Lead in CRM"/>
+                        <button name="reply_comment" class="oe_highlight" type="object" string="Reply Comments"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button type="object" class="oe_stat_button" name="action_show_lead" icon="fa-star">
+                                <field name="leads_count" string="Leads" widget="statinfo"/>
+                            </button>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="video_title"/>
+                                <field name="live_video_id" required="1"/>
+                            </group>
+                            <group>
+                                <field name="video_status" widget="badge"
+                                       decoration-muted="video_status == 'none'"
+                                       decoration-success="video_status == 'LIVE'"
+                                       decoration-info="video_status == 'VOD'"
+                                       decoration-warning="video_status =='other'"
+                                       optional="show"/>
+                                <field name="page_id"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="video_url" widget="CopyClipboardChar"/>
+                            <field name="embed_html" widget="CopyClipboardChar"/>
+                        </group>
+                        <notebook>
+                            <page name="facebook_comments" string="Comments in Stream">
+                                <field name="comment_ids" widget="one2many">
+                                    <tree string="Comments" editable="bottom" default_order="created_time">
+                                        <field name="message"/>
+                                        <field name="created_time"/>
+                                        <field name="comment_id"/>
+                                        <field name="user_id"/>
+                                        <field name="repply_comment"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Error Reply Comment">
+                                <field name="description_sended_comment"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record id="live_videos_action" model="ir.actions.act_window">
+            <field name="name">Live Videos</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">live.videos</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Live Videos -->
+        <menuitem name="Live Videos" id="live_videos_menu"
+                  sequence="8"
+                  parent="facebook_live_stream_menu_root"
+                  action="live_videos_action"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="crm activity assets" inherit_id="web.assets_backend">
+            <xpath expr="//script[@src='/mail/static/src/components/activity/activity.js']" position="replace">
+                <script type="text/javascript" src="/sim_crm_activity/static/src/components/activity/activity.js"/>
+            </xpath>
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/sim_crm_activity/static/src/models/activity/activity.js"/>
+<!--                <script type="text/javascript" src="/sim_crm_activity/static/src/js/activity2.js"/>-->
+            </xpath>
+        </template>
+    </data>
+</odoo>

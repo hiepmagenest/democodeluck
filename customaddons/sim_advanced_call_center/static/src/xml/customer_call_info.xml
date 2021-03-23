@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="call_customer_info">
+            <div class="page">
+                <table class="table table-sm">
+                    <tbody>
+                        <!--                        <tr>-->
+                        <!--                            <th colspan="3"><span t-esc="title['care']"/>-->
+                        <!--                                <span t-esc="data['sale_take_care']"/>-->
+                        <!--                            </th>-->
+                        <!--                        </tr>-->
+                        <!--                        <tr>-->
+                        <!--                            <th colspan="3"><span t-esc="title['last_sale']"/>-->
+                        <!--                                <span t-esc="data['sale_take_care']"/>-->
+                        <!--                            </th>-->
+                        <!--                        </tr>-->
+                        <!--                        <tr>-->
+                        <!--                            <th>-->
+                        <!--                                <span t-esc="data['so_amount']"/>-->
+                        <!--                                <span t-esc="title['sale']"/>-->
+                        <!--                            </th>-->
+                        <!--                            <th>-->
+                        <!--                                <span t-esc="data['po_amount']"/>-->
+                        <!--                                <span t-esc="title['purchase']"/>-->
+                        <!--                            </th>-->
+                        <!--                            <th>-->
+                        <!--                                <span t-esc="data['task_amount']"/>-->
+                        <!--                                <span t-esc="title['task']"/>-->
+                        <!--                            </th>-->
+                        <!--                        </tr>-->
+                        <tr t-foreach="body"
+                            t-as="line">
+                            <td>
+                                <span t-esc="line['so']"/>
+                            </td>
+                            <td>
+                                <t t-foreach="line['po']" t-as="po">
+                                    <span t-esc="po"/>
+                                    <br/>
+                                </t>
+
+                            </td>
+                            <td>
+                                <t t-foreach="line['task']" t-as="task">
+                                    <span t-esc="task"/>
+                                    <br/>
+                                </t>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </template>
+    </data>
+</odoo>
+
+

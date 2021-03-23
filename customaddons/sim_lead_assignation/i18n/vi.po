@@ -1,0 +1,232 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sim_lead_assignation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-22 02:36+0000\n"
+"PO-Revision-Date: 2021-03-22 02:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sim_lead_assignation
+#: model_terms:ir.ui.view,arch_db:sim_lead_assignation.crm_lead_inherit
+msgid "Confirm Lead"
+msgstr "Xác nhận tiềm năng"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_setting.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting__auto_setup_lead
+#, python-format
+msgid "Auto Assigned Lead"
+msgstr "Tự động gán tiềm năng"
+
+#. module: sim_lead_assignation
+#: model:ir.ui.menu,name:sim_lead_assignation.crm_menu_auto_lead_setting
+msgid "Auto Lead Setting"
+msgstr "Tự động cài đặt tiềm năng "
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_line.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__campaign_id
+#, python-format
+msgid "Campaign"
+msgstr "Chiến dịch"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead__is_assigned
+#, python-format
+msgid "Confirm Lead"
+msgstr "Xác nhận tiềm năng"
+
+#. module: sim_lead_assignation
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__create_uid
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: sim_lead_assignation
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__create_date
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead__date_setting_lead
+#, python-format
+msgid "Date Auto Assigned Lead"
+msgstr "Ngày gán lead tự động"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_line.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__date_from
+#, python-format
+msgid "Date From"
+msgstr "Từ ngày"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_line.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__date_to
+#, python-format
+msgid "Date To"
+msgstr "Đến ngày"
+
+#. module: sim_lead_assignation
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__display_name
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: sim_lead_assignation
+#: model:res.groups,name:sim_lead_assignation.group_crm_lead_setting
+msgid "Group Test"
+msgstr ""
+
+#. module: sim_lead_assignation
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead__id
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__id
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting__id
+msgid "ID"
+msgstr "Mã định danh"
+
+#. module: sim_lead_assignation
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line____last_update
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: sim_lead_assignation
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__write_uid
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sim_lead_assignation
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__write_date
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sim_lead_assignation
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__lead_assignation_id
+msgid "Lead Assignation"
+msgstr "Phân công tiềm năng"
+
+#. module: sim_lead_assignation
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting__lead_assignation_line_ids
+msgid "Lead Assignation Line"
+msgstr "Chi tiết phân công tiềm năng"
+
+#. module: sim_lead_assignation
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__lead_assignation_setting
+msgid "Lead Assignation Setting"
+msgstr "Cài đặt phân công tiềm năng"
+
+#. module: sim_lead_assignation
+#: model:ir.model,name:sim_lead_assignation.model_crm_lead_assignation_line
+msgid "Lead auto assign line"
+msgstr "Phân công nhân viên tự động gán tiềm năng"
+
+#. module: sim_lead_assignation
+#: model:ir.model,name:sim_lead_assignation.model_crm_lead_assignation_setting
+msgid "Lead auto assign setting"
+msgstr "Cài đặt tự động gán nhân viên cho tiêm năng"
+
+#. module: sim_lead_assignation
+#: model:ir.model,name:sim_lead_assignation.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Tiềm năng/Cơ hội"
+
+#. module: sim_lead_assignation
+#: model:ir.actions.server,name:sim_lead_assignation.refresh_auto_setting_lead_ir_actions_server
+#: model:ir.cron,cron_name:sim_lead_assignation.refresh_auto_setting_lead
+#: model:ir.cron,name:sim_lead_assignation.refresh_auto_setting_lead
+msgid "Refresh Automation Lead Setting"
+msgstr "Tự động làm mới tiềm năng"
+
+#. module: sim_lead_assignation
+#: model_terms:ir.ui.view,arch_db:sim_lead_assignation.crm_lead_assignation_setting_view_form
+msgid "Rules"
+msgstr "Quy tắc thiết lập"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_line.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__team_id
+#, python-format
+msgid "Sale Team"
+msgstr "Nhóm"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_line.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__user_ids
+#, python-format
+msgid "Sale User"
+msgstr "Nhân viên"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead__user_id
+#, python-format
+msgid "Salesperson"
+msgstr "Nhân viên kinh doanh"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_line.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__sequence
+#, python-format
+msgid "Sequence"
+msgstr "Trình tự"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_setting.py:0
+#: model:ir.actions.server,name:sim_lead_assignation.open_crm_lead_assignation_setting_view_form
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting__name
+#, python-format
+msgid "Setting"
+msgstr "Cài đặt"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_line.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__source_id
+#, python-format
+msgid "Source"
+msgstr "Nguồn"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_line.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_line__tag_id
+#, python-format
+msgid "Tag"
+msgstr "Thẻ"
+
+#. module: sim_lead_assignation
+#: code:addons/sim_lead_assignation/models/crm_lead_assignation_setting.py:0
+#: model:ir.model.fields,field_description:sim_lead_assignation.field_crm_lead_assignation_setting__withdraw_after
+#, python-format
+msgid "Withdraw Lead After (minutes)"
+msgstr "Thu hồi sau (phút)"
+
+#. module: sim_lead_assignation
+#: model_terms:ir.ui.view,arch_db:sim_lead_assignation.crm_lead_assignation_line_view_form
+msgid "crm_lead_assignation_line_form"
+msgstr ""
+
+#. module: sim_lead_assignation
+#: model_terms:ir.ui.view,arch_db:sim_lead_assignation.crm_lead_assignation_line_view_tree
+msgid "crm_lead_assignation_line_tree"
+msgstr ""
+
+#. module: sim_lead_assignation
+#: model_terms:ir.ui.view,arch_db:sim_lead_assignation.crm_lead_assignation_setting_view_form
+msgid "crm_lead_assignation_setting_form"
+msgstr ""

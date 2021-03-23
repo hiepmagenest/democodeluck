@@ -1,0 +1,120 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sim_send_esms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-26 13:29+0000\n"
+"PO-Revision-Date: 2021-02-26 13:29+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sim_send_esms
+#: model:ir.model.fields,field_description:sim_send_esms.field_res_config_settings__sms_api_key
+msgid "Api Key"
+msgstr ""
+
+#. module: sim_send_esms
+#: model:ir.model.fields,field_description:sim_send_esms.field_res_config_settings__sms_brandname
+msgid "Brand Name"
+msgstr "Thương hiệu"
+
+#. module: sim_send_esms
+#: model:ir.model,name:sim_send_esms.model_res_config_settings
+msgid "Config Settings"
+msgstr "Thiết lập cấu hình"
+
+#. module: sim_send_esms
+#: model:ir.model.fields,field_description:sim_send_esms.field_res_config_settings__sms_content
+msgid "Content"
+msgstr "Nội dung"
+
+#. module: sim_send_esms
+#: model:ir.model.fields,field_description:sim_send_esms.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:sim_send_esms.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: sim_send_esms
+#: model:ir.model.fields,field_description:sim_send_esms.field_crm_lead__id
+#: model:ir.model.fields,field_description:sim_send_esms.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: sim_send_esms
+#: model:ir.model.fields,field_description:sim_send_esms.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:sim_send_esms.field_res_config_settings____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: sim_send_esms
+#: model:ir.model,name:sim_send_esms.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Tiềm năng/Cơ hội"
+
+#. module: sim_send_esms
+#: model:ir.model.fields,field_description:sim_send_esms.field_crm_lead__phone_inherit
+#: model_terms:ir.ui.view,arch_db:sim_send_esms.send_sms_crm_inherit
+msgid "Phone"
+msgstr "Số điện thoại"
+
+#. module: sim_send_esms
+#: model_terms:ir.ui.view,arch_db:sim_send_esms.send_sms_crm_inherit
+msgid "SMS"
+msgstr "Tin nhắn"
+
+#. module: sim_send_esms
+#: model:ir.model.fields,field_description:sim_send_esms.field_res_config_settings__sms_type
+msgid "SMS Type"
+msgstr "Kiểu tin nhắn"
+
+#. module: sim_send_esms
+#: model:ir.model.fields,field_description:sim_send_esms.field_res_config_settings__sms_secret_Key
+msgid "Secret Key"
+msgstr ""
+
+#. module: sim_send_esms
+#: model_terms:ir.ui.view,arch_db:sim_send_esms.res_config_settings_view_form_send_sms
+msgid "Settings send esms"
+msgstr "Cầu hình gửi esms"
+
+#. module: sim_send_esms
+#: model_terms:ir.ui.view,arch_db:sim_send_esms.res_config_settings_view_form_send_sms
+msgid "Sms Api Key"
+msgstr ""
+
+#. module: sim_send_esms
+#: model_terms:ir.ui.view,arch_db:sim_send_esms.res_config_settings_view_form_send_sms
+msgid "Sms Brand Name"
+msgstr ""
+
+#. module: sim_send_esms
+#: model_terms:ir.ui.view,arch_db:sim_send_esms.res_config_settings_view_form_send_sms
+msgid "Sms Content"
+msgstr "Nội dung Sms"
+
+#. module: sim_send_esms
+#: model_terms:ir.ui.view,arch_db:sim_send_esms.res_config_settings_view_form_send_sms
+msgid "Sms Secret Key"
+msgstr ""
+
+#. module: sim_send_esms
+#: model_terms:ir.ui.view,arch_db:sim_send_esms.res_config_settings_view_form_send_sms
+msgid "Sms Type"
+msgstr "Kiểu loại tín nhắn sms"
+
+#. module: sim_send_esms
+#: model_terms:ir.ui.view,arch_db:sim_send_esms.res_config_settings_view_form_send_sms
+msgid "Sms Unicode"
+msgstr "Mã ký tự Sms"
+
+#. module: sim_send_esms
+#: model:ir.model.fields,field_description:sim_send_esms.field_res_config_settings__sms_is_unicode
+msgid "Unicode"
+msgstr "Mã ký tự"

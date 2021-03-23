@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="chatbot_view_form_1" model="ir.ui.view">
+            <field name="name">chatbot_view_form</field>
+            <field name="model">chat.bot.question.and.answer</field>
+            <field name="arch" type="xml">
+                <form string="Lên kịch bản chat bot">
+                    <sheet>
+                        <group string="Tên cấu hình">
+                            <field name="name" nolabel="1"/>
+                        </group>
+                        <div string="Cấu hình chuẩn bị cho kịch bản" style="width:1000px">
+                            <field name="prepare_question_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle" readonly="1"/>
+                                    <field name="response_answer"/>
+                                    <field name="apply_for_question_id"/>
+                                    <field name="next_question_id"/>
+                                    <field name="is_question_get_phone"/>
+                                    <field name="is_question_get_email"/>
+                                </tree>
+                                <form>
+                                    <group>
+                                        <field name="response_answer"/>
+                                    </group>
+                                    <group>
+                                        <field name="apply_for_question_id"/>
+                                    </group>
+                                    <group>
+                                        <field name="next_question_id"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </div>
+                        <group string="Ngoại lệ">
+                            <field name="exception" nolabel="1"/>
+                        </group>
+                        <div>
+                            <strong>user_name</strong>: sẽ được thay bằng tên của người nhắn tin với page
+                            <br/>
+                            <strong>Ngoại lệ</strong>: Câu thoại sẽ được page trả lời khi câu trả lời của khách hàng
+                            không nằm trong kịch bản
+                            <br/>
+                            <strong>Câu trả lời khách hàng</strong>: Đoạn tin nhắn trả lời của khách hàng
+                            <br/>
+                            <strong>Áp dụng cho câu hỏi</strong>: Là câu hỏi trước khi nhân được câu trả lời của khách
+                            hàng
+                            <br/>
+                            <strong>Câu hỏi tiếp theo</strong>: Là câu hỏi câu hỏi sẽ được bot trả lời khi nhân được câu
+                            trả lời của khách hàng
+                            <br/>
+                            <strong>Câu hỏi lấy số điện thoại</strong>: Là câu hỏi câu hỏi xin số điện thoại khách
+                            hàng,nếu được tick chọn khi khách hàng trả lời số điện thoại sẽ được ghi vào trường
+                            số diện thoại trên Tiềm năng
+                            <br/>
+                            <strong>Câu hỏi lấy email khách hàng</strong>: Là câu hỏi câu hỏi xin email khách hàng,nếu
+                            được tick chọn khi khách hàng trả lời email sẽ được ghi vào trường số email trên
+                            Tiềm năng
+                            <br/>
+                            <br/>
+                            <div>
+                                <img src="chat_bot/static/src/img/chatbot.png" alt="Kịch bản chat bot"
+                                     title="Kịch bản chat bot" aria-label="Kịch bản chat bot"/>
+                            </div>
+                        </div>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+        <record id="tree_answer_view_form" model="ir.ui.view">
+            <field name="name">tree_answer_view_form</field>
+            <field name="model">tree.answer</field>
+            <field name="arch" type="xml">
+                <form string="tree_answer_form">
+                    <sheet>
+                        <group>
+                            <field name="tree_question_id"/>
+                            <field name="answer"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="tree_question_view_form" model="ir.ui.view">
+            <field name="name">tree_question_view_form</field>
+            <field name="model">tree.question</field>
+            <field name="arch" type="xml">
+                <form string="tree_question_form">
+                    <sheet>
+                        <group>
+                            <field name="summary_of_question"/>
+                            <field name="question" required="1"/>
+                            <field name="selection_answer_ids"/>
+                            <field name="is_question_get_phone"/>
+                            <field name="is_question_get_email"/>
+                            <field name="link_image_url"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="tree_question_view_tree" model="ir.ui.view">
+            <field name="name">tree_question_view_tree</field>
+            <field name="model">tree.question</field>
+            <field name="arch" type="xml">
+                <tree string="tree_question_tree">
+                    <field name="summary_of_question"/>
+                    <field name="question"/>
+                    <field name="selection_answer_ids" widget="many2many_tags"/>
+                    <field name="is_question_get_phone"/>
+                    <field name="is_question_get_email"/>
+                    <field name="link_image_url"/>
+                </tree>
+            </field>
+        </record>
+        <record id="tree_question_action" model="ir.actions.act_window">
+            <field name="name">các câu hỏi dành cho chat bot facebook</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">tree.question</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                           (0, 0, {'view_mode': 'tree', 'view_id': ref('tree_question_view_tree')}),
+                          (0, 0, {'view_mode': 'form', 'view_id': ref('tree_question_view_form')})]"/>
+        </record>
+
+        <record id="chatbot_view_tree" model="ir.ui.view">
+            <field name="name">chatbot_view_tree</field>
+            <field name="model">chat.bot.question.and.answer</field>
+            <field name="arch" type="xml">
+                <tree string="chatbot_tree">
+                    <field name="name"/>
+                    <field name="exception"/>
+                </tree>
+            </field>
+        </record>
+        <record id="setting_chatbot_action" model="ir.actions.act_window">
+            <field name="name">Cấu hình chat bot</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">chat.bot.question.and.answer</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="chatbot_customer_status_view_tree" model="ir.ui.view">
+            <field name="name">chatbot_customer_status_view_tree</field>
+            <field name="model">chat.bot.customer.status</field>
+            <field name="arch" type="xml">
+                <tree string="chatbot_customer_status_tree">
+                    <field name="name_customer"/>
+                    <field name="sender_id"/>
+                    <field name="last_question_id"/>
+                    <field name="has_visited"/>
+                </tree>
+            </field>
+        </record>
+        <record id="chat_bot_customer_action" model="ir.actions.act_window">
+            <field name="name">Trạng thái khách hàng thăm page</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">chat.bot.customer.status</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="menu_config_chat_bot" name="Cấu hình kịch bản chat bot" parent="crm.crm_menu_config"
+                  action="setting_chatbot_action" sequence="103"/>
+        <menuitem id="menu_config_chat_bot_tree_question" name="Tất cả các câu hỏi dành cho chat bot facebook"
+                  parent="crm.crm_menu_config" action="tree_question_action" sequence="104"/>
+        <menuitem id="menu_chat_bot_customer_status" parent="base.menu_administration"
+                  name="Trạng thái khách hàng ghé qua page" action="chat_bot_customer_action" sequence="21"/>
+    </data>
+</odoo>

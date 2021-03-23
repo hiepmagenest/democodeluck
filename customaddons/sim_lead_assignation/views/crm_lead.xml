@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="crm_lead_inherit" model="ir.ui.view">
+            <field name="name">crm.lead.inherit</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='user_id']" position="before">
+                    <field name="is_assigned" readonly="1"/>
+                    <field name="date_setting_lead" invisible="1"/>
+                </xpath>
+
+                <xpath expr="//button[@name='action_set_won_rainbowman']" position="before">
+                    <button name="lead_assigned" string="Confirm Lead" type="object" class="oe_highlight" attrs="{'invisible': [ ('is_assigned','=',True)]}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

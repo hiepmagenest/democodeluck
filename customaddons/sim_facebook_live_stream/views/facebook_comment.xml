@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record id="facebook_comment_view_tree" model="ir.ui.view">
+            <field name="name">facebook_comment_view_tree</field>
+            <field name="model">facebook.comment</field>
+            <field name="arch" type="xml">
+                <tree string="facebook_comment_tree">
+                    <field name="video_id"/>
+                    <field name="user_id"/>
+                    <field name="message"/>
+                    <field name="page_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="facebook_comment_view_form" model="ir.ui.view">
+            <field name="name">facebook_comment_view_form</field>
+            <field name="model">facebook.comment</field>
+            <field name="arch" type="xml">
+                <form string="facebook_comment_form">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="video_id"/>
+                                <field name="page_id"/>
+                            </group>
+                            <group>
+                                <field name="created_time"/>
+                                <field name="comment_id" required="1"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="user_id"/>
+                            </group>
+                            <group>
+                                <field name="repply_comment"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="message"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="facebook_comment_list_view">
+            <field name="name">Facebook Comment</field>
+            <field name="res_model">facebook.comment</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!-- facebook page -->
+        <menuitem name="Comments" id="facebook_comment_menu"
+                  sequence="15"
+                  parent="facebook_live_stream_menu_root"
+                  action="facebook_comment_list_view"/>
+
+    </data>
+</odoo>

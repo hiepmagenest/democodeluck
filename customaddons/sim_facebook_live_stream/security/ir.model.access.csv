@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_facebook_page,sim_facebook_live_stream.facebook_page,model_facebook_page,base.group_system,1,1,1,1
+access_facebook_comment,sim_facebook_live_stream.facebook_comment,model_facebook_comment,base.group_system,1,1,1,1
+access_facebook_page_category,sim_facebook_live_stream.facebook_page_category,model_facebook_page_category,base.group_system,1,1,1,1
+
+
+access_live_videos,sim_facebook_live_stream.live_videos,model_live_videos,base.group_system,1,1,1,1
+
+access_fetch_info_pages,sim_facebook_live_stream.fetch_info_pages,model_fetch_info_pages,base.group_system,1,1,1,1

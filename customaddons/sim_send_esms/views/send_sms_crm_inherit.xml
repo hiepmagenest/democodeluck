@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <record id="send_sms_crm_inherit" model="ir.ui.view">
+            <field name="name">send_sms_crm_inherit.form</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//label[@for='phone_group_lead_info']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+
+                </xpath>
+                <xpath expr="//label[@for='phone_group_lead_info']" position="replace">
+                    <label for="phone_inherit" string="Phone"/>
+                </xpath>
+
+                <xpath expr="//group[@name='lead_info']//field[@name='phone']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+
+                </xpath>
+                <xpath expr="//group[@name='lead_info']//field[@name='phone']" position="after">
+                    <field name="phone_inherit"/>
+                    <div attrs="{'invisible':[('phone_inherit','=', False)]}">
+                        <i class="fa fa-mobile">
+                            <small class="font-weight-bold ml-1">
+                                <button name="send_sms_api" type="object" string="SMS"
+                                        style="border-color:#FFFFFF;padding-top: 3px;padding-left: 4px;margin-top: -3px;"/>
+                            </small>
+                        </i>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

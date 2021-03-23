@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Form view-->
+    <record id="crm_lead_assignation_line_view_form" model="ir.ui.view">
+        <field name="name">crm_lead_assignation_line_view_form</field>
+        <field name="model">crm.lead.assignation.line</field>
+        <field name="arch" type="xml">
+            <form string="crm_lead_assignation_line_form">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="user_ids" widget="many2many_tags"/>
+                            <field name="tag_id"/>
+                        </group>
+                        <group>
+                            <field name="campaign_id"/>
+                            <field name="source_id"/>
+                            <field name="team_id" required="1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View  -->
+    <record id="crm_lead_assignation_line_view_tree" model="ir.ui.view">
+        <field name="name">crm_lead_assignation_line_view_tree</field>
+        <field name="model">crm.lead.assignation.line</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <tree string="crm_lead_assignation_line_tree">
+                <field name="campaign_id"/>
+                <field name="source_id"/>
+                <field name="team_id" required="1"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,344 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sim_chat_bot
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-26 10:04+0000\n"
+"PO-Revision-Date: 2021-02-26 10:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.chatbot_view_form_1
+msgid ""
+"<strong>user_name</strong>: sẽ được thay bằng tên của người nhắn tin với page\n"
+"                            <br/>\n"
+"                            <strong>Ngoại lệ</strong>: Câu thoại sẽ được page trả lời khi câu trả lời của khách hàng\n"
+"                            không nằm trong kịch bản\n"
+"                            <br/>\n"
+"                            <strong>Câu trả lời khách hàng</strong>: Đoạn tin nhắn trả lời của khách hàng\n"
+"                            <br/>\n"
+"                            <strong>Áp dụng cho câu hỏi</strong>: Là câu hỏi trước khi nhân được câu trả lời của khách\n"
+"                            hàng\n"
+"                            <br/>\n"
+"                            <strong>Câu hỏi tiếp theo</strong>: Là câu hỏi câu hỏi sẽ được bot trả lời khi nhân được câu\n"
+"                            trả lời của khách hàng\n"
+"                            <br/>\n"
+"                            <strong>Câu hỏi lấy số điện thoại</strong>: Là câu hỏi câu hỏi xin số điện thoại khách\n"
+"                            hàng,nếu được tick chọn khi khách hàng trả lời số điện thoại sẽ được ghi vào trường\n"
+"                            số diện thoại trên Tiềm năng\n"
+"                            <br/>\n"
+"                            <strong>Câu hỏi lấy email khách hàng</strong>: Là câu hỏi câu hỏi xin email khách hàng,nếu\n"
+"                            được tick chọn khi khách hàng trả lời email sẽ được ghi vào trường số email trên\n"
+"                            Tiềm năng\n"
+"                            <br/>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status__create_uid
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_question_and_answer__create_uid
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__create_uid
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_answer__create_uid
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status__create_date
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_question_and_answer__create_date
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__create_date
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_answer__create_date
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__create_date
+msgid "Created on"
+msgstr "Được tạo ra"
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__selection_answer_ids
+msgid "Các lựa chọn trả lời"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status__last_question_id
+msgid "Câu hỏi cuối cùng"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__is_question_get_email
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__is_question_get_email
+msgid "Câu hỏi lấy email khách hàng"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__is_question_get_phone
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__is_question_get_phone
+msgid "Câu hỏi lấy số điện thoại"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__next_question_id
+msgid "Câu hỏi tiếp theo"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__question
+msgid "Câu thoại"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_question_and_answer__exception
+msgid "Câu thoại ngoại lệ"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_answer__answer
+msgid "Câu trả lời"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__response_answer
+msgid "Câu trả lời khách hàng"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.actions.act_window,name:sim_chat_bot.setting_chatbot_action
+msgid "Cấu hình chat bot"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.chatbot_view_form_1
+msgid "Cấu hình chuẩn bị cho kịch bản"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_question_and_answer__prepare_question_ids
+msgid "Cấu hình chuẩn bị các câu hỏi"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.ui.menu,name:sim_chat_bot.menu_config_chat_bot
+msgid "Cấu hình kịch bản chat bot"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status__display_name
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_question_and_answer__display_name
+#: model:ir.model.fields,field_description:sim_chat_bot.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__display_name
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_answer__display_name
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_answer__tree_question_id
+msgid "Dành cho câu hỏi"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_crm_lead__facebook_sender_id
+msgid "Facebook Id"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status__id
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_question_and_answer__id
+#: model:ir.model.fields,field_description:sim_chat_bot.field_crm_lead__id
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__id
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_answer__id
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__id
+msgid "ID"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__chat_bot_question_answer_id
+msgid "Kịch bản Chatbot"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.chatbot_view_form_1
+msgid "Kịch bản chat bot"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status____last_update
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_question_and_answer____last_update
+#: model:ir.model.fields,field_description:sim_chat_bot.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question____last_update
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_answer____last_update
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status__write_uid
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_question_and_answer__write_uid
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__write_uid
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_answer__write_uid
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status__write_date
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_question_and_answer__write_date
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__write_date
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_answer__write_date
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model,name:sim_chat_bot.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Tiềm năng/Cơ hội"
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__link_image_url
+msgid "Link ảnh (nếu có)"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.chatbot_view_form_1
+msgid "Lên kịch bản chat bot"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,help:sim_chat_bot.field_chat_bot_question_and_answer__name
+msgid ""
+"Lời chào khách hàng khi họ inbox tới page của công ty.\n"
+" Để đặt lời chào: 'Xin chào anh Đào Văn A đã quan tâm tới dịch vụ của chúng tôi', \n"
+" Chúng ta đặ theo cú pháp: 'Xin chào XXX đã quan tâm tới dịch vụ của chúng tôi'"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status__sender_id
+msgid "Mã khách hàng"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,help:sim_chat_bot.field_chat_bot_customer_status__sender_id
+msgid "Mã sender_id từ facebook"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.chatbot_view_form_1
+msgid "Ngoại lệ"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,help:sim_chat_bot.field_chat_bot_question_and_answer__exception
+msgid "Sử dụng khi câu trả lời của khách hàng nằm ngoài kịch bản"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__sequence
+msgid "Thứ tự"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.ui.menu,name:sim_chat_bot.menu_chat_bot_customer_status
+msgid "Trạng thái khách hàng ghé qua page"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.actions.act_window,name:sim_chat_bot.chat_bot_customer_action
+msgid "Trạng thái khách hàng thăm page"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.chatbot_view_form_1
+msgid "Tên cấu hình"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status__name_customer
+msgid "Tên khách hàng"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_question_and_answer__name
+msgid "Tên kịch bản"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_tree_question__summary_of_question
+msgid "Tóm tắt câu hỏi"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.ui.menu,name:sim_chat_bot.menu_config_chat_bot_tree_question
+msgid "Tất cả các câu hỏi dành cho chat bot facebook"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model,name:sim_chat_bot.model_chat_bot_customer_status
+msgid "chat.bot.customer.status"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model,name:sim_chat_bot.model_chat_bot_question_and_answer
+msgid "chat.bot.question.and.answer"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.chatbot_customer_status_view_tree
+msgid "chatbot_customer_status_tree"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.chatbot_view_tree
+msgid "chatbot_tree"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.actions.act_window,name:sim_chat_bot.tree_question_action
+msgid "các câu hỏi dành cho chat bot facebook"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model,name:sim_chat_bot.model_prepare_question
+msgid "prepare.question"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model,name:sim_chat_bot.model_tree_answer
+msgid "tree.answer"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model,name:sim_chat_bot.model_tree_question
+msgid "tree.question"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.tree_answer_view_form
+msgid "tree_answer_form"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.tree_question_view_form
+msgid "tree_question_form"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model_terms:ir.ui.view,arch_db:sim_chat_bot.tree_question_view_tree
+msgid "tree_question_tree"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_prepare_question__apply_for_question_id
+msgid "Áp dụng cho câu hỏi"
+msgstr ""
+
+#. module: sim_chat_bot
+#: model:ir.model.fields,field_description:sim_chat_bot.field_chat_bot_customer_status__has_visited
+msgid "Đã từng ghé thăm page"
+msgstr ""

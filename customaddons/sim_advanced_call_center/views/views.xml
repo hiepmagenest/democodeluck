@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+        <template id="assets_backend_call_center" name="Call" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/sim_advanced_call_center/static/src/js/call_bus_channel.js"/>
+                <!--                <script type="text/javascript" src="/advanced_call_center/static/src/js/call_effect_webclient.js"/>-->
+            </xpath>
+        </template>
+        <record id="hr_employee_inherit_form" model="ir.ui.view">
+            <field name="name">hr.employee.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='hr_settings']/group/group[@name='active_group']/field[@name='user_id']"
+                       position="after">
+                    <field name="call_id"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="call_effect_form" model="ir.ui.view">
+            <field name="name">call.effect.form</field>
+            <field name="model">call.effect</field>
+            <field name="arch" type="xml">
+                <form create="false" edit="false">
+                    <div class="oe_title">
+                        <img src="/sim_advanced_call_center/static/images/calling.gif" alt="Calling"
+                             style="width: 50px"/>
+                        <strong class="o_stat_text text-success">
+                            <field name="name" readonly="1"/>
+                        </strong>
+                        <strong class="o_stat_text">
+                            <field name="phone" readonly="1"/>
+                        </strong>
+                        <!--                        <field name="permission"/>-->
+                    </div>
+                    <group>
+                        <field name="customer" readonly="1"/>
+                        <field name="has_customer" invisible="1"/>
+                        <field name="description" readonly="1" widget="html"
+                               attrs="{'invisible': [('has_customer','=', False)]}"/>
+                    </group>
+                    <!--                    <strong class="o_stat_text text-danger" attrs="{'invisible': [('permission','=', True)]}">-->
+                    <!--                        Bạn không hoặc chưa có thẩm quyền nhận và xử lý cuộc gọi này,có thể chọn chuyển cuộc gọi cho nhân viên marketing,chăm sóc khách hàng hoặc hủy cuộc gọi.-->
+                    <!--                    </strong>-->
+                    <footer>
+                        <button string="Apply" class="btn-default oe_highlight" name="on_create_lead" type="object"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

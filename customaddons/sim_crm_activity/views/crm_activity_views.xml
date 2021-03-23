@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_crm_lead_activity_view_tree" model="ir.ui.view">
+        <field name="name">action_crm_lead_activity_view_tree</field>
+        <field name="model">mail.activity</field>
+        <field name="arch" type="xml">
+            <tree string="Activities">
+                <field name="user_id"/>
+                <field name="activity_type_id"/>
+                <field name="summary"/>
+                <field name="note"/>
+                <field name="date_deadline"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_crm_lead_activity_view_form" model="ir.ui.view">
+        <field name="name">action_crm_lead_activity_view_form</field>
+        <field name="model">mail.activity</field>
+        <field name="priority">999</field>
+        <field name="arch" type="xml">
+            <form string="Activity">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button string="Lead" name="action_view_source_document" type="object"
+                                class="oe_stat_button" icon="fa-file-text-o">
+                        </button>
+                    </div>
+                    <group>
+                        <field name="res_model_id" invisible="1"/>
+                        <field name="summary"/>
+                        <field name="user_id"/>
+                        <field name="note"/>
+                        <field name="date_deadline"/>
+                        <field name="state"/>
+                        <field name="activity_result"/>
+                        <field name="activity_type_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_crm_lead_activity" model="ir.actions.act_window">
+        <field name="name">Activities</field>
+        <field name="res_model">mail.activity</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('res_model', '=', 'crm.lead'), '|', ('active', '=', True), ('active', '=', False)]
+        </field>
+        <field name="view_id" ref="action_crm_lead_activity_view_tree"/>
+    </record>
+
+    <record id="crm_lead_activity_action_tree" model="ir.actions.act_window.view">
+        <field name="sequence">1</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="action_crm_lead_activity_view_tree"/>
+        <field name="act_window_id" ref="action_crm_lead_activity"/>
+    </record>
+
+    <record id="crm_lead_activity_action_form" model="ir.actions.act_window.view">
+        <field name="sequence">2</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="action_crm_lead_activity_view_form"/>
+        <field name="act_window_id" ref="action_crm_lead_activity"/>
+    </record>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="crm_lead_activity_menu" name="Activities" parent="crm.crm_menu_root"
+              action="sim_crm_activity.action_crm_lead_activity" sequence="99"/>
+</odoo>

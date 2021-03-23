@@ -1,0 +1,547 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sim_facebook_live_stream
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-26 13:47+0000\n"
+"PO-Revision-Date: 2021-02-26 13:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.fetch_info_pages_view_form
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_page_category.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page_category__category_name
+#, python-format
+msgid "Category"
+msgstr "Thể loại"
+
+#. module: sim_facebook_live_stream
+#: model:ir.ui.menu,name:sim_facebook_live_stream.categorys_menu
+msgid "Categorys"
+msgstr "Các thể loại"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_crm_lead__comment_ids
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__comment_ids
+msgid "Comment"
+msgstr "Bình luận"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__comment_id
+msgid "Comment ID"
+msgstr "Đinh danh bình luận"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/contacts_fb.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_res_partner__comment_count
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_res_users__comment_count
+#, python-format
+msgid "Comment count"
+msgstr "Số lượng bình luận"
+
+#. module: sim_facebook_live_stream
+#: model:ir.ui.menu,name:sim_facebook_live_stream.facebook_comment_menu
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.contacts_live_stream_form_view
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.crm-fb_form_view
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.live_videos_view_form
+msgid "Comments"
+msgstr "Bình Luận"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.crm-fb_form_view
+msgid "Comments in Live video"
+msgstr "Bình luận trong video trực tiếp"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.live_videos_view_form
+msgid "Comments in Stream"
+msgstr "Bình luận trong buổi phát sóng"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model,name:sim_facebook_live_stream.model_res_partner
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: sim_facebook_live_stream
+#: model:ir.actions.act_window,name:sim_facebook_live_stream.action_contacts_facebook
+msgid "Contacts"
+msgstr "Liên hệ"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.live_videos_view_form
+msgid "Create Lead in CRM"
+msgstr "Tạo mới cơ hội"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_comment.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__created_time
+#, python-format
+msgid "Created Time"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__create_uid
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__create_uid
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page_category__create_uid
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_fetch_info_pages__create_uid
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__create_date
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__create_date
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page_category__create_date
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_fetch_info_pages__create_date
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__description_sended_comment
+msgid "Description Sended Comment"
+msgstr "Thông tin phản hồi bình luận"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__display_name
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__display_name
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page_category__display_name
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_fetch_info_pages__display_name
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__display_name
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/live_videos.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__embed_html
+#, python-format
+msgid "Embed Html"
+msgstr "Đương dẫn nhúng Html"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/wizards/fetch_info_pages.py:0
+#, python-format
+msgid "Error : %s"
+msgstr "Lỗi"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.live_videos_view_form
+msgid "Error Reply Comment"
+msgstr "Lỗi phản hồi bình luận"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/live_videos.py:0
+#, python-format
+msgid "Error connection"
+msgstr "Lỗi kết nối"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/live_videos.py:0
+#, python-format
+msgid "Error connection "
+msgstr "Lỗi kết nối"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.contacts_live_stream_form_view
+msgid "Facebook Account"
+msgstr "Tài khoản facebook"
+
+#. module: sim_facebook_live_stream
+#: model:ir.actions.act_window,name:sim_facebook_live_stream.facebook_category_action
+msgid "Facebook Category"
+msgstr "Thể loại trang facebook"
+
+#. module: sim_facebook_live_stream
+#: model:ir.actions.act_window,name:sim_facebook_live_stream.facebook_comment_list_view
+msgid "Facebook Comment"
+msgstr "Bình luận"
+
+#. module: sim_facebook_live_stream
+#: model:ir.ui.menu,name:sim_facebook_live_stream.facebook_user_menu
+msgid "Facebook Contacts"
+msgstr "Liên hệ"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_user.py:0
+#, python-format
+msgid "Facebook ID"
+msgstr "Đinh danh tài khoản facebook"
+
+#. module: sim_facebook_live_stream
+#: model:ir.ui.menu,name:sim_facebook_live_stream.facebook_live_stream_menu_root
+msgid "Facebook Live Stream"
+msgstr "Phát sóng trực tiếp trên Facebook"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/contacts_fb.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_res_partner__fb_message_id
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_res_users__fb_message_id
+#, python-format
+msgid "Facebook Message ID"
+msgstr "Định danh tài khoản messager facebook"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_user.py:0
+#, python-format
+msgid "Facebook Name"
+msgstr "Tên người dùng Facebook"
+
+#. module: sim_facebook_live_stream
+#: model:ir.actions.act_window,name:sim_facebook_live_stream.facebook_page_list_view
+#: model:ir.ui.menu,name:sim_facebook_live_stream.facebook_page_menu
+msgid "Facebook Pages"
+msgstr "Facebook"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_fetch_info_pages__fb_user_id
+msgid "Facebook User ID"
+msgstr "Đinh danh người dùng facebook"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.live_videos_view_form
+msgid "Fetch Comments"
+msgstr "Nạp dự liệu bình luận"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.facebook_page_view_form
+msgid "Fetch Live Videos"
+msgstr "Nạp dự liệu Video trực tiếp"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.fetch_info_pages_view_form
+msgid "Get Access Token"
+msgstr "Lấy mã xác nhận"
+
+#. module: sim_facebook_live_stream
+#: model:ir.actions.act_window,name:sim_facebook_live_stream.create_wizard_get_access_token
+msgid "Get All Access ToKen Website You manage"
+msgstr "Lấy toàn bộ thông tin trang Facebook người dùng quản lý"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.fetch_info_pages_view_form
+msgid "Get All Access Token Your Page"
+msgstr "Lấy mã xác nhận trang faceebook"
+
+#. module: sim_facebook_live_stream
+#: model:ir.actions.act_window,name:sim_facebook_live_stream.call_fetch_info_pages_view_action
+msgid "Get Page Infomations"
+msgstr "Lấy thông tin trang facebook"
+
+#. module: sim_facebook_live_stream
+#: model:ir.ui.menu,name:sim_facebook_live_stream.get_page_menu
+msgid "Get Pages"
+msgstr "Nạp dự liệu trang facbook"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_crm_lead__id
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__id
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__id
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page_category__id
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_fetch_info_pages__id
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__id
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_res_partner__id
+msgid "ID"
+msgstr "Đinh danh"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields.selection,name:sim_facebook_live_stream.selection__live_videos__video_status__live
+msgid "LIVE"
+msgstr "Phát sóng"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields.selection,name:sim_facebook_live_stream.selection__facebook_page__page_status__live_now
+msgid "LIVE_NOW"
+msgstr "Phát sóng trực tiếp"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment____last_update
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page____last_update
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page_category____last_update
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_fetch_info_pages____last_update
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos____last_update
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__write_uid
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__write_uid
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page_category__write_uid
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_fetch_info_pages__write_uid
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__write_date
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__write_date
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page_category__write_date
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_fetch_info_pages__write_date
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model:ir.model,name:sim_facebook_live_stream.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Tiềm năng/Cơ hội"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.live_videos_view_form
+msgid "Leads"
+msgstr "Tiềm năng"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__leads_count
+msgid "Leads Count"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_comment.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__video_id
+#, python-format
+msgid "Link Videos"
+msgstr "Đường dẫn đến video"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/crm_fb.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_crm_lead__live_video
+#, python-format
+msgid "Live Video"
+msgstr "Phát trong trực tiếp"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__live_video_count
+msgid "Live Video Count"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model:ir.actions.act_window,name:sim_facebook_live_stream.live_videos_action
+#: model:ir.ui.menu,name:sim_facebook_live_stream.live_videos_menu
+msgid "Live Videos"
+msgstr "Phát trong trực tiếp"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.facebook_page_view_form
+msgid "Live videos"
+msgstr "Phát trong trực tiếp"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__message
+msgid "Message"
+msgstr "Tin nhắn"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields.selection,name:sim_facebook_live_stream.selection__facebook_page__page_status__none
+#: model:ir.model.fields.selection,name:sim_facebook_live_stream.selection__live_videos__video_status__none
+msgid "NONE"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_page.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__page_name
+#, python-format
+msgid "Name"
+msgstr "Tên trang facebook"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields.selection,name:sim_facebook_live_stream.selection__live_videos__video_status__other
+msgid "Other"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_page.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__page_access_token
+#, python-format
+msgid "PAGE ACCESS TOKEN"
+msgstr "Mã xác nhận trang facebook"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__page_id
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__page_id
+msgid "Page"
+msgstr "Trang"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_res_partner__page_comment
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_res_users__page_comment
+msgid "Page Comment"
+msgstr "Trang bình luận"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_page.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__page_id
+#, python-format
+msgid "Page ID"
+msgstr "Mã Đinh danh"
+
+#. module: sim_facebook_live_stream
+#: model:ir.ui.menu,name:sim_facebook_live_stream.page_menu
+msgid "Pages"
+msgstr "Danh sách Trang"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.live_videos_view_form
+msgid "Reply  Using Id_Comment"
+msgstr "Phản hồi bình luận người dùng"
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.live_videos_view_form
+msgid "Reply Comments"
+msgstr "Phản hồi người dùng"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_comment.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__repply_comment
+#, python-format
+msgid "Reply Status"
+msgstr "Trạng thái phản hồi"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields.selection,name:sim_facebook_live_stream.selection__facebook_page__page_status__shutdown
+msgid "SHUTDOWN"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/live_videos.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__secure_video_url
+#, python-format
+msgid "Secure Stream URL"
+msgstr "Đường dẫn phát sóng trực tiếp (Bảo mật)"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_page.py:0
+#: code:addons/sim_facebook_live_stream/models/live_videos.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__page_status
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__video_status
+#, python-format
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/live_videos.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__video_url
+#, python-format
+msgid "Stream URL"
+msgstr "Đừng dẫn phát sóng trực tiếp"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/live_videos.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__video_title
+#, python-format
+msgid "Title"
+msgstr "Tiêu đề"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_page.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__page_url
+#, python-format
+msgid "URL"
+msgstr "Đường dẫn URL"
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_comment.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_comment__user_id
+#, python-format
+msgid "User Comment"
+msgstr "Người bình luận"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_fetch_info_pages__user_accesss_token
+msgid "User Token In APP"
+msgstr "Mã định danh ứng dụng"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model.fields.selection,name:sim_facebook_live_stream.selection__live_videos__video_status__vod
+msgid "VOD"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/live_videos.py:0
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_live_videos__live_video_id
+#, python-format
+msgid "Video ID"
+msgstr "Đinh danh video"
+
+#. module: sim_facebook_live_stream
+#: model:ir.model,name:sim_facebook_live_stream.model_facebook_comment
+msgid "facebook.comment"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model:ir.model,name:sim_facebook_live_stream.model_facebook_page
+msgid "facebook.page"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: code:addons/sim_facebook_live_stream/models/facebook_page.py:0
+#: model:ir.model,name:sim_facebook_live_stream.model_facebook_page_category
+#: model:ir.model.fields,field_description:sim_facebook_live_stream.field_facebook_page__page_category
+#, python-format
+msgid "facebook.page.category"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.facebook_comment_view_form
+msgid "facebook_comment_form"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.facebook_comment_view_tree
+msgid "facebook_comment_tree"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.facebook_page_category_view_form
+msgid "facebook_page_category_form"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.facebook_page_category_view_tree
+msgid "facebook_page_category_tree"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.facebook_page_view_form
+msgid "facebook_page_form"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.facebook_page_view_tree
+msgid "facebook_page_tree"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model:ir.model,name:sim_facebook_live_stream.model_fetch_info_pages
+msgid "fetch.info.pages"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model:ir.model,name:sim_facebook_live_stream.model_live_videos
+msgid "live.videos"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.live_videos_view_form
+msgid "live_videos_form"
+msgstr ""
+
+#. module: sim_facebook_live_stream
+#: model_terms:ir.ui.view,arch_db:sim_facebook_live_stream.live_videos_view_tree
+msgid "live_videos_tree"
+msgstr ""

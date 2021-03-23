@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_lead_assignation_setting_view_form" model="ir.ui.view">
+        <field name="name">crm_lead_assignation_setting_view_form</field>
+        <field name="model">crm.lead.assignation.setting</field>
+        <field name="arch" type="xml">
+            <form string="crm_lead_assignation_setting_form" create="false">
+                <sheet>
+                    <!--                    <group>-->
+                    <!--                        <field name="auto_setup_lead" widget="boolean_toggle"/>-->
+                    <!--                    </group>-->
+                    <group>
+                        <group>
+                            <field name="withdraw_after"/>
+                            <field name="name" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="rule" string="Rules">
+                            <field name="lead_assignation_line_ids">
+                                <tree editable="bottom" create="1" delete="1">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="campaign_id"/>
+                                    <field name="source_id"/>
+                                    <field name="tag_id"/>
+                                    <field name="team_id" required="1"/>
+                                    <field name="user_ids" widget="many2many_tags"
+                                           domain="[('sale_team_id','=',team_id)]"
+                                           attrs="{'readonly': [('team_id', '=', False)]}"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="open_crm_lead_assignation_setting_view_form" model="ir.actions.server">
+        <field name="name">Setting</field>
+        <field name="model_id" ref="sim_lead_assignation.model_crm_lead_assignation_setting"/>
+        <field name="state">code</field>
+        <field name="code">action = model.action_open_view_from()</field>
+    </record>
+
+    <menuitem
+            id="crm_menu_auto_lead_setting"
+            name="Auto Lead Setting"
+            parent="crm.crm_menu_root"
+            action="open_crm_lead_assignation_setting_view_form"
+            sequence="200"/>
+
+</odoo>

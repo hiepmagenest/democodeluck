@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="fetch_info_pages_view_form" model="ir.ui.view">
+        <field name="name">fetch_info_pages_view_form_1</field>
+        <field name="model">fetch.info.pages</field>
+        <field name="arch" type="xml">
+            <form string="Get All Access Token Your Page">
+                <group class="oe_title">
+                    <field name="fb_user_id" required="1"/>
+                    <field name="user_accesss_token" required="1"/>
+                </group>
+                <footer>
+                    <button name="action_all_access_token" string="Get Access Token" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="create_wizard_get_access_token" model="ir.actions.act_window">
+        <field name="name">Get All Access ToKen Website You manage</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fetch.info.pages</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="fetch_info_pages_view_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

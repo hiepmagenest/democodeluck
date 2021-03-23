@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_chat_bot_question_and_answer,access.chat.bot.question.and.answer,model_chat_bot_question_and_answer,base.group_system,1,1,1,1
+access_customer_status,access.chat.bot.customer.status,model_chat_bot_customer_status,base.group_system,1,1,1,1
+access_tree_answer,access.tree.answer,model_tree_answer,base.group_system,1,1,1,1
+access_tree_question,access.tree.question,model_tree_question,base.group_system,1,1,1,1
+access_prepare_question,access.prepare.question,model_prepare_question,base.group_system,1,1,1,1

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem name="Live Streams" id="live_stream_menu"
+                  sequence="30"
+                  parent="facebook_live_stream_menu_root"/>
+    </data>
+</odoo>

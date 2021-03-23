@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="crm-fb_form_view" model="ir.ui.view">
+            <field name="name">crm_live_stream_form_view</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='team_id']" position="after">
+                        <field name="live_video"/>
+                </xpath>
+                <xpath expr="//page[@name='lead']" position="after">
+                    <page string="Comments in Live video">
+                        <group>
+                            <field name="comment_ids" widget="one2many"
+                                   domain="[('user_id', '=', partner_id)]">
+                                <tree string="Comments" default_order="created_time">
+                                    <field name="message"/>
+                                    <field name="created_time"/>
+                                    <field name="user_id"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
