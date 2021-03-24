@@ -1,0 +1,105 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sim_hr_contract_types
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-26 02:52+0000\n"
+"PO-Revision-Date: 2021-02-26 02:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sim_hr_contract_types
+#: model:ir.model,name:sim_hr_contract_types.model_hr_contract
+msgid "Contract"
+msgstr "Hợp đồng"
+
+#. module: sim_hr_contract_types
+#: model:ir.model,name:sim_hr_contract_types.model_hr_contract_type
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract_type__name
+#: model_terms:ir.ui.view,arch_db:sim_hr_contract_types.hr_contract_type_view_form
+#: model_terms:ir.ui.view,arch_db:sim_hr_contract_types.hr_contract_type_view_search
+#: model_terms:ir.ui.view,arch_db:sim_hr_contract_types.hr_contract_type_view_tree
+msgid "Contract Type"
+msgstr "Loại hợp đồng"
+
+#. module: sim_hr_contract_types
+#: model:ir.actions.act_window,name:sim_hr_contract_types.action_hr_contract_type
+#: model:ir.ui.menu,name:sim_hr_contract_types.hr_menu_contract_type
+msgid "Contract Types"
+msgstr "Các loại hợp đồng"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract_type__create_uid
+msgid "Created by"
+msgstr "Tạo bởi"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract_type__create_date
+msgid "Created on"
+msgstr "Tạo vào"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract__display_name
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract_type__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract__type_id
+msgid "Employee Category"
+msgstr "Danh mục nhân viên"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,help:sim_hr_contract_types.field_hr_contract__type_id
+msgid "Employee category"
+msgstr "Danh mục nhân viên"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,help:sim_hr_contract_types.field_hr_contract_type__sequence
+msgid "Gives the sequence when displaying a list of Contract."
+msgstr "Cung cấp trình tự khi hiển thị danh sách Hợp đồng."
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract__id
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract_type__id
+msgid "ID"
+msgstr "Mã"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract____last_update
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract_type____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract_type__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract_type__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,help:sim_hr_contract_types.field_hr_contract_type__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: sim_hr_contract_types
+#: model_terms:ir.ui.view,arch_db:sim_hr_contract_types.hr_contract_type_view_search
+msgid "Search Contract Type"
+msgstr "Tìm kiếm loại hợp đồng"
+
+#. module: sim_hr_contract_types
+#: model:ir.model.fields,field_description:sim_hr_contract_types.field_hr_contract_type__sequence
+#: model_terms:ir.ui.view,arch_db:sim_hr_contract_types.hr_contract_type_view_search
+msgid "Sequence"
+msgstr "Thứ tự"

@@ -1,0 +1,569 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sim_ohrms_overtime
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-26 06:42+0000\n"
+"PO-Revision-Date: 2021-02-26 06:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_contract_overtime_view
+msgid "<span>/day</span>"
+msgstr "<span>/ngày</span>"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_contract_overtime_view
+msgid "<span>/hour</span>"
+msgstr "<span>/giờ</span>"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_needaction
+msgid "Action Needed"
+msgstr "Hành động cần thiết"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+msgid "Approve"
+msgstr "Phê duyệt"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__hr_overtime__state__approved
+msgid "Approved"
+msgstr "Phê duyệt"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__attchd_copy
+msgid "Attach A File"
+msgstr "Đính kèm tệp"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số lượng tệp đính kèm"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__attendance_ids
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+msgid "Attendance"
+msgstr "Đính kèm"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__hr_overtime__type__cash
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__overtime_type__type__cash
+msgid "Cash"
+msgstr "Tiền mặt"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.actions.act_window,help:sim_ohrms_overtime.hr_overtime_type_action
+msgid "Click to create new Approval Type."
+msgstr "Nhấp chuột để tạo loại phê duyệt mới"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.actions.act_window,help:sim_ohrms_overtime.hr_overtime_action
+msgid "Click to create new Pre Approval Overtime Request."
+msgstr "Nhấp chuột để tạo mới phê duyệt yêu cầu làm thêm giờ"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__contract_id
+msgid "Contract"
+msgstr "Hợp đồng"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__create_uid
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__create_uid
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__create_uid
+msgid "Created by"
+msgstr "Tạo bởi"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__create_date
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__create_date
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__create_date
+msgid "Created on"
+msgstr "Tạo vào"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__current_user
+msgid "Current User"
+msgstr "Người dùng hiện taij"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__current_user_boolean
+msgid "Current User Boolean"
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__contract_id
+msgid "Current contract of the employee"
+msgstr "Hợp đồng hiện tại của nhân viên"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__date_from
+msgid "Date From"
+msgstr "Từ ngày"
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__date_to
+msgid "Date to"
+msgstr "Đến ngày"
+
+#. module: sim_ohrms_overtime
+#: code:addons/sim_ohrms_overtime/models/overtime_request.py:0
+#, python-format
+msgid "Day Overtime Needs Day Wage in Employee Contract."
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_contract__over_day
+msgid "Day Wage"
+msgstr "Ngày lương"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__hr_overtime__duration_type__days
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__overtime_type__duration_type__days
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+msgid "Days"
+msgstr "Ngày"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__department_id
+msgid "Department"
+msgstr "Phòng ban"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__desc
+msgid "Description"
+msgstr "Miêu tả"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_contract__display_name
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__display_name
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_payslip__display_name
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__display_name
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__hr_overtime__state__draft
+msgid "Draft"
+msgstr "Bản nháp"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__duration_type
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__duration_type
+msgid "Duration Type"
+msgstr "Loại thời lượng"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__employee_id
+msgid "Employee"
+msgstr "Nhân viên"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model,name:sim_ohrms_overtime.model_hr_contract
+msgid "Employee Contract"
+msgstr "Hợp đồng nhân viên"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__attchd_copy_name
+msgid "File Name"
+msgstr "Tên thư mục"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_follower_ids
+msgid "Followers"
+msgstr "Theo dõi"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Theo dõi (Kênh)"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_partner_ids
+    msgid "Followers (Partners)"
+msgstr "Theo dõi (đối tác)"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__from_hrs
+msgid "From"
+msgstr "Đến"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+msgid "Global Leaves"
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__global_leaves
+msgid "Global Time Off"
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model,name:sim_ohrms_overtime.model_hr_overtime
+msgid "HR Overtime"
+msgstr "Quản lý làm thêm giờ"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model,name:sim_ohrms_overtime.model_overtime_type
+msgid "HR Overtime Type"
+msgstr "Quản lý loại làm thêm giờ"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model,name:sim_ohrms_overtime.model_overtime_type_rule
+msgid "HR Overtime Type Rule"
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__hr_overtime__duration_type__hours
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__overtime_type__duration_type__hours
+msgid "Hour"
+msgstr "Giờ"
+
+#. module: sim_ohrms_overtime
+#: code:addons/sim_ohrms_overtime/models/overtime_request.py:0
+#, python-format
+msgid "Hour Overtime Needs Hour Wage in Employee Contract."
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_contract__over_hour
+msgid "Hour Wage"
+msgstr "Giờ lương"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__days_no_tmp
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+msgid "Hours"
+msgstr "Giờ"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_contract__id
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__id
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_payslip__id
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__id
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__message_needaction
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Nếu kiểm , hãy kiểm tra bạn cần kiểm  tracác tin nhắn mới"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__message_has_error
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu kiểm tra, hãy kiểm tra các thư lỗi"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_is_follower
+msgid "Is Follower"
+msgstr "Có theo dõi"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__job_id
+msgid "Job"
+msgstr "Việc làm"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_contract____last_update
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime____last_update
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_payslip____last_update
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type____last_update
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__write_uid
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__write_uid
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__write_date
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__write_date
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__overtime_type__type__leave
+msgid "Leave "
+msgstr "Nghỉ"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__leave_compute
+msgid "Leave Compute"
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__leave_id
+msgid "Leave ID"
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__leave_type
+msgid "Leave Type"
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Phần đính kèm chính"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__manager_id
+msgid "Manager"
+msgstr "Người quản lý"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi gửi tin nhắn"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__name
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__name
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__days_no
+msgid "No. of Days"
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng hành động"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lượng lỗi"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Số lượng tin nhắn yêu cầu một hành động"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số lượng tin nhắn bị lỗi gửi"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Số lượng tin nhắn chưa đọc"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__type_line_id
+msgid "Over Time Type"
+msgstr "Loại tăng ca"
+
+#. module: sim_ohrms_overtime
+#: model:hr.salary.rule,name:sim_ohrms_overtime.hr_salary_rule_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_payslip__overtime_ids
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_contract_overtime_view
+msgid "Overtime"
+msgstr "Tăng ca"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__cash_day_amount
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__cash_hrs_amount
+msgid "Overtime Amount"
+msgstr "Số tiền làm thêm giờ"
+
+#. module: sim_ohrms_overtime
+#: model:ir.actions.act_window,name:sim_ohrms_overtime.hr_overtime_action
+#: model:ir.ui.menu,name:sim_ohrms_overtime.overtime
+#: model:ir.ui.menu,name:sim_ohrms_overtime.overtime_submenu
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_tree_view
+msgid "Overtime Request"
+msgstr "Yêu cầu làm thêm giờ"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__overtime_type_id
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_type_form_view
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_type_tree_view
+msgid "Overtime Type"
+msgstr "Loại làm thêm giờ"
+
+#. module: sim_ohrms_overtime
+#: model:ir.actions.act_window,name:sim_ohrms_overtime.hr_overtime_type_action
+#: model:ir.ui.menu,name:sim_ohrms_overtime.overtime_type_submenu
+msgid "Overtime Types"
+msgstr "Loại làm thêm giờ"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__payslip_paid
+msgid "Paid in Payslip"
+msgstr "Thanh toán bằng lương"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model,name:sim_ohrms_overtime.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Phiếu lương"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__project_id
+msgid "Project"
+msgstr "Dự án"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__project_manager_id
+msgid "Project Manager"
+msgstr "Người quản lý dự án"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__public_holiday
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+msgid "Public Holiday"
+msgstr "Ngày nghỉ lễ"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__hrs_amount
+msgid "Rate"
+msgstr "Bình chọn"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_type_form_view
+msgid "Reference ...."
+msgstr "Tham khảo ...."
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+msgid "Refuse"
+msgstr "Từ chối"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__cancel_reason
+msgid "Refuse Reason"
+msgstr "Lý do từ chối"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__hr_overtime__state__refused
+msgid "Refused"
+msgstr "Từ chối"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__current_user
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__manager_id
+msgid "Related user name for the resource to manage its access."
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__rule_line_ids
+msgid "Rule Line"
+msgstr "Dòng quy tắc"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_type_form_view
+msgid "Rules"
+msgstr "Quy tắc"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Lỗi gửi SMS"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+msgid "Submit To Finance"
+msgstr "Gửi đến bộ phận kế toán"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type_rule__to_hrs
+msgid "To"
+msgstr "Đến"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__type
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_overtime_type__type
+msgid "Type"
+msgstr "Loại"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_unread
+msgid "Unread Messages"
+msgstr "Tin nhắn chưa đọc"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Đếm số tin nhắn chưa đọc"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__hr_overtime__state__f_approve
+msgid "Waiting"
+msgstr "Đợi"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__website_message_ids
+msgid "Website Messages"
+msgstr "Tin nhắn trang web"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,help:sim_ohrms_overtime.field_hr_overtime__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử trang web"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+msgid "Work Description"
+msgstr "Mô tả công việc"
+
+#. module: sim_ohrms_overtime
+#: model_terms:ir.ui.view,arch_db:sim_ohrms_overtime.hr_overtime_form_view
+msgid "Work Schedule"
+msgstr "Lịch làm việc"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__work_schedule
+msgid "Working Time"
+msgstr "Thời gian làm việc"
+
+#. module: sim_ohrms_overtime
+#: code:addons/sim_ohrms_overtime/models/overtime_request.py:0
+#, python-format
+msgid "You can not have 2 Overtime requests that overlaps on same day!"
+msgstr "Bạn không thể có 2 yêu cầu Làm thêm giờ trong cùng một ngày"
+
+#. module: sim_ohrms_overtime
+#: code:addons/sim_ohrms_overtime/models/overtime_request.py:0
+#, python-format
+msgid "You cannot delete TIL request which is not in draft state."
+msgstr "Bạn không thể xóa yêu cầu TIL, nó không ở trạng thái nháp"
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields.selection,name:sim_ohrms_overtime.selection__hr_overtime__type__leave
+msgid "leave"
+msgstr ""
+
+#. module: sim_ohrms_overtime
+#: model:ir.model.fields,field_description:sim_ohrms_overtime.field_hr_overtime__state
+msgid "state"
+msgstr ""
